@@ -1,0 +1,6 @@
+name: devStringConverter
+version: 0.0.1
+author: Hannes Rammer <Hannes.Rammer@gmail.com>
+description: converting strings via toVarName toClassName toPolyName toTableName
+environment:
+  sdk: '>=0.8.10+6 <2.0.0'
