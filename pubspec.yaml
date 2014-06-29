@@ -1,4 +1,4 @@
-name: devStringConverter
+name: dev_string_converter
 version: 0.0.1
 author: Hannes Rammer <Hannes.Rammer@gmail.com>
 description: converting strings via toVarName toClassName toPolyName toTableName

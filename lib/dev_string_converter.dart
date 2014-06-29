@@ -1,4 +1,4 @@
-library devstringconverter;
+library dev_string_converter;
 
 class DevStringConverter {
   static String toTableName(String text) {
