@@ -1,7 +1,10 @@
 name: dev_string_converter
-version: 0.0.1
+version: 0.1.0
 author: Hannes Rammer <Hannes.Rammer@gmail.com>
-description: converting strings via toVarName toClassName toPolyName toTableName
+description: "converting strings via \r\n          toVarName(x)   <-> toLowerCamelCase(x)\r\
+  \n          toClassName(x) <-> toUpperCamelCase(x)\r\n          toConstName(x) <->\
+  \ toUpperCaseWith(x,\"_\")\r\n          toTableName(x) <-> toLowerCaseWith(x,\"\
+  _\")\r\n          toPolyName(x)  <-> toLowerCaseWith(x,\"-\")"
 homepage: https://github.com/HannesRammer/devStringConverter
 environment:
   sdk: '>=0.8.10+6 <2.0.0'
