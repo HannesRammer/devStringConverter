@@ -1,9 +1,7 @@
 library dev_string_converter;
 
-/*
- * toUpperCaseWith("const-name-style", "_")
- * transforms into "CONST_NAME_STYLE"
- */
+/// toUpperCaseWith("const-name-style", "_")
+/// transforms into "CONST_NAME_STYLE"
 String toUpperCaseWith(String text, String sign) {
   String symbol = "";
   String polyName = "";
@@ -37,18 +35,14 @@ String toUpperCaseWith(String text, String sign) {
   return polyName;
 }
 
-/*
-  * transforms into "CONST_NAME_STYLE" 
-  */
+/// transforms into "CONST_NAME_STYLE" 
 String toConstName(String text) {
   return toUpperCaseWith(text, "_");
 }
 
-/*
- * toLowerCaseWith("HashNameStyle", "#")
- * transforms into "hash#name#style"
- * where # is your input sign 
- */
+/// toLowerCaseWith("HashNameStyle", "#")
+/// transforms into "hash#name#style"
+/// where # is your input sign
 String toLowerCaseWith(String text, String sign) {
   String symbol = "";
   String polyName = "";
@@ -82,23 +76,17 @@ String toLowerCaseWith(String text, String sign) {
   return polyName;
 }
 
-/*
-* transforms into "db_table_style" 
-*/
+/// transforms into "db_table_style" 
 String toTableName(String text) {
   return toLowerCaseWith(text, "_");
 }
 
-/*
-* transforms into "poly-name-style" 
-*/
+/// transforms into "poly-name-style"
 String toPolyName(String text) {
   return toLowerCaseWith(text, "-");
 }
 
-/*
- * transforms into "lowerCamelCaseStyle" 
- */
+/// transforms into "lowerCamelCaseStyle"
 String toLowerCamelCase(String text) {
   String symbol = "";
   String varName = "";
@@ -109,8 +97,8 @@ String toLowerCamelCase(String text) {
   } else if (text.contains("-")) {
     symbol = "-";
   }
+  //Test Title, Test word, test Word, table_name, poly-name
   if (symbol == " " || symbol == "_" || symbol == "-") {
-//Test Title, Test word, test Word, table_name, poly-name
     List words = text.split(symbol);
     int count = 0;
     words.forEach((word) {
@@ -128,16 +116,12 @@ String toLowerCamelCase(String text) {
   return varName;
 }
 
-/*
- * transforms into "lowerCamelCaseStyle" 
- */
+/// transforms into "lowerCamelCaseStyle" 
 String toVarName(String text) {
   return toLowerCamelCase(text);
 }
 
-/*
- * transforms into "UpperCamelCaseStyle" 
- */
+/// transforms into "UpperCamelCaseStyle" 
 String toUpperCamelCase(String text) {
   String symbol = "";
   String className = "";
@@ -161,9 +145,7 @@ String toUpperCamelCase(String text) {
   return className;
 }
 
-/*
- * transforms into "UpperCamelCaseStyle" 
- */
+/// transforms into "UpperCamelCaseStyle" 
 String toClassName(String text) {
   return toUpperCamelCase(text);
 }
