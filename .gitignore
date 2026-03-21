@@ -1,4 +1,4 @@
-# Don’t commit the following files and directories created by pub and dart2js
+﻿# Don’t commit the following files and directories created by pub and dart2js
 packages/
 *.js_
 *.js.deps
@@ -49,3 +49,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.packages
+.pub
+.idea
+.idea/codeStyleSettings.xml

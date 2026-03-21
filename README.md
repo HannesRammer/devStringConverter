@@ -1,4 +1,4 @@
-##DefStringConverter 0.1.0
+##DevStringConverter 0.2.0
 ---
 
 I wrote this package since I realised 

@@ -35,7 +35,7 @@ String toUpperCaseWith(String text, String sign) {
   return polyName;
 }
 
-/// transforms into "CONST_NAME_STYLE" 
+/// transforms into "CONST_NAME_STYLE"
 String toConstName(String text) {
   return toUpperCaseWith(text, "_");
 }
@@ -76,7 +76,7 @@ String toLowerCaseWith(String text, String sign) {
   return polyName;
 }
 
-/// transforms into "db_table_style" 
+/// transforms into "db_table_style"
 String toTableName(String text) {
   return toLowerCaseWith(text, "_");
 }
@@ -116,12 +116,12 @@ String toLowerCamelCase(String text) {
   return varName;
 }
 
-/// transforms into "lowerCamelCaseStyle" 
+/// transforms into "lowerCamelCaseStyle"
 String toVarName(String text) {
   return toLowerCamelCase(text);
 }
 
-/// transforms into "UpperCamelCaseStyle" 
+/// transforms into "UpperCamelCaseStyle"
 String toUpperCamelCase(String text) {
   String symbol = "";
   String className = "";
@@ -145,7 +145,7 @@ String toUpperCamelCase(String text) {
   return className;
 }
 
-/// transforms into "UpperCamelCaseStyle" 
+/// transforms into "UpperCamelCaseStyle"
 String toClassName(String text) {
   return toUpperCamelCase(text);
 }
